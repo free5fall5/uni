@@ -6,19 +6,21 @@ int main ()
 {
     string name1;
     string name2;
-    int age1;
-    int age2;
+    double age1;
+    double age2;
     float avg;
 
 
-    cout << "What's the name of the player one?";
+    cout << "What's the name of the player one?" << endl;
     cin >> name1;
-    cout << "What's the name of the player two?";
+    cout << "What's the name of the player two?" << endl;
     cin >> name2;
-    cout << "What's the age of the player one?";
+    cout << "What's the age of the player one?" << endl;
     cin >> age1;
-    cout << "What's the age of the player two?";
+    cout << "What's the age of the player two?" << endl;
     cin >> age2;
+    cout << endl;
+
     if (age1 > age2)
     {
         cout << name1 << " is older than " << name2 << ".";
@@ -38,9 +40,8 @@ int main ()
 
         }
         avg = (age1 + age2) /2.0;
-        cout << endl;
-        cout << "Average age is: " << avg;
-
+        cout << endl << endl;
+        cout << "Average age is: " << avg << endl;
         return 0;
     }
 }
