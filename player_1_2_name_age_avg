@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    string name1;
+    string name2;
+    int age1;
+    int age2;
+    float avg;
+
+
+    cout << "What's the name of the player one?";
+    cin >> name1;
+    cout << "What's the name of the player two?";
+    cin >> name2;
+    cout << "What's the age of the player one?";
+    cin >> age1;
+    cout << "What's the age of the player two?";
+    cin >> age2;
+    if (age1 > age2)
+    {
+        cout << name1 << " is older than " << name2 << ".";
+    }
+    else
+    {
+        if (age1 ==age2)
+        {
+            cout << name1 << " and " << name2 << " are the same age.";
+        }
+        else
+        {
+            if (age2 > age1)
+            {
+                cout << name2 << " is older than " << name1 << ".";
+            }
+
+        }
+        avg = (age1 + age2) /2.0;
+        cout << endl;
+        cout << "Average age is: " << avg;
+
+        return 0;
+    }
+}
