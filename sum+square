@@ -1,0 +1,34 @@
+# include <iostream>
+#include <math.h>
+using namespace std;
+
+int main ()
+{
+    int input = 0;
+    int sum = 0;
+    cout << "=============================================================" << endl;
+    cout << "=============================================================" << endl << endl;
+    cout << "This program will sum the numbers you enter, output the sum " << endl;
+    cout << "and square route of the sum,until you enter a negative number, " << endl;
+    cout << "at which point the program will terminate." << endl << endl;
+    cout << "=============================================================" << endl;
+    cout << "=============================================================" << endl << endl;
+
+    while ( input >= 0 )
+    {
+
+        cout << "Please enter a positive number." << endl << endl;
+        cin >> input;
+
+        if ( input >= 0 )
+        {
+            sum = sum + input;
+            cout << "The sum is " << sum <<"." <<endl;
+            cout << "The square is " << sqrt (sum)<<"." <<endl << endl;
+        }
+        else break;
+    }
+
+    return 0;
+}
+
