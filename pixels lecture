@@ -1,0 +1,116 @@
+lectrures
+
+
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+    int r = 0;
+
+
+cout << "Number of rows: ";
+cin >> r;
+
+for (int j = 0; j<r; j++) {
+    // cout << j;
+    for (int i = 0; i <= j; i++) {
+        cout <<"*";
+
+    }
+    cout  << endl;
+}
+}
+
+
+=================
+==================
+
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+
+
+int num;
+int sum;
+int count_ok; 
+int count_not_ok; 
+
+
+ /* AND && ; OR ||   && has priority over or, so use () 
+
+
+sredno aritmetichno ot vsichki polojitelni,i otricatelnite, koitto se delqt na 7 i 5 ednovremenno ili 13  
+
+ krai na 1voto nekorektno 
+ krai na 3to nekorektno chislo */
+  
+  
+  
+  while ((num > -1) || (((num%5==0) && (num%7==0)) || (num%13==0)  
+    
+    
+    
+    =========================================
+    =========================================
+    
+    
+    #include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+    int n;
+    int r;
+
+    cout << "Number of *: ";
+    cin >>n;
+    cout << "Number of rows: ";
+    cin >>r;
+
+    /* for ( init   ;    end cond     ;   step) {} */
+
+    for (int j = 0; j<r; j++)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            if ((0 == j)or (r - 1 == j) or
+                    (0 == i) or (n - 1 ==i))
+            {
+                cout << "-";
+            }
+            else
+            {
+                cout <<"*" ;
+            }
+
+        }
+        cout << endl;
+
+    }
+
+    return 0;
+
+
+    /* HW ramka @ body reduva -  *   
+    HW 4 triugylnika s ramka
+    
+    */
+}
+
+    
+    
+    
+    
+    
+    
+
