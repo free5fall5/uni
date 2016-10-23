@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+
+    int number=0;
+    double sum=0.;
+    int count_ok=0;
+    int count_not_ok=0;
+
+    cout << "This program will give you the arithmetic mean of all the numbers you enter" <<endl;
+    cout << "Permited numbers are: "<<endl;
+    cout << endl;
+    cout << "positive numbers"<<endl;
+    cout << "negative dividents of 7 and 5 at the same time" <<endl;
+    cout << "negative devidents of 13"<<endl <<endl ;
+    cout << "The program will terminate after you enter an invalid number."<<endl;
+
+    while  ((number > -1) || (((number%5==0) && (number%7==0)) || (number%13==0)))
+    {
+        cout << "Please enter your number: " <<endl;
+        cin >> number;
+        if ((number > -1) || (((number%5==0) && (number%7==0)) || (number%13==0)))
+        {
+            (sum = sum + number);
+            (count_ok++);
+            cout << "The current sum is: " << sum<< endl;
+            cout << "The current arithmetic mean is " << (sum / count_ok ) <<endl;
+        }
+        else break;
+    }
+
+    return 0;
+}
+
